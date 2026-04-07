@@ -19,7 +19,3 @@ $bp-desktop: 1280px;
 @mixin desktop {
   @media (min-width: #{$bp-desktop}) { @content; }
 }
-
-.a {
-  color: #000;
-}
