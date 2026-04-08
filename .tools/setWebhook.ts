@@ -1,7 +1,7 @@
 import { Telegraf } from "telegraf";
 
 
-export type TMode = 'ppBot_toLocal'|'preprod' | 'prod' | 'local' | 'adminBot' | 'adminBot_toLocal' | undefined;
+export type TMode = 'ppBot_toLocal'|'preprod' | 'prod' | 'local' | 'adminBot' | 'adminBot_toLocal' | 'adminBot_toProd' | undefined;
 export interface D {
     BOT_TOKEN: string; 
     SERVER_URL: string;
