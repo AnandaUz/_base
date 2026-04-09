@@ -10,5 +10,4 @@ docker run --rm liner-test
 docker run -it liner-test sh
 
 
-как импотировать правильно - поддерживается на уровне Ноде
-Node.js Subpath Imports: 
+npm install --save-dev tsc-alias
