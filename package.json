@@ -1,5 +1,9 @@
 {
   "name": "base",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnandaUz/_base.git"
+  },
   "version": "1.0.0",
   "main": "index.js",
   "type": "module",
