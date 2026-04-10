@@ -11,3 +11,6 @@ docker run -it liner-test sh
 
 
 npm install --save-dev tsc-alias
+
+
+New-Item -Path "D:\_sites\test\server\base" -ItemType SymbolicLink -Target "D:\_sites\test\_base\base_server"

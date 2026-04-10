@@ -1,9 +1,13 @@
 {
-  "name": "base",
-  "version": "1.0.0",
-  "main": "index.js",
+  "name": "@base/shared",
+  "version": "0.0.1",
   "type": "module",
+  "main": "dist/server/test.js",
+  "types": "dist/server/test.d.ts",
+  "scripts": {
+    "build": "tsc -p tsconfig.json"
+  },
   "exports": {
-    "./*": "./*"
+    "./server/*": "./dist/server/*.js"
   }
 }
