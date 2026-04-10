@@ -7,10 +7,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "type": "module",
-  "scripts": {
-    "build": "tsc -p tsconfig.json"
-  },
   "exports": {
-    "./server/*": "./dist/server/*.js"
+    "./*": "./*"
   }
 }
