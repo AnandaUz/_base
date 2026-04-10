@@ -9,9 +9,9 @@ docker run --rm liner-test
 
 docker run -it liner-test sh
 
-
 как импотировать правильно - поддерживается на уровне Ноде
 Node.js Subpath Imports: 
 
 создание симлинка
+
 New-Item -Path "D:\_sites\test\server\base" -ItemType SymbolicLink -Target "D:\_sites\test\_base\base_server"
