@@ -14,14 +14,12 @@ export interface WebhookConfig {
 }
 export async function setWebhook2(name:string='',links: Links) {
     
-
     const config = links[name] 
     if (!config) return;
     const bot_token = config.BOT_TOKEN;
     const url = config.SERVER_URL;
     const apiUrl = config.apiURL;
     const resultStr = `✅ ${name}`;
-
 
     try {        
         const bot = new Telegraf(bot_token);
