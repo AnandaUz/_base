@@ -32,26 +32,26 @@ export async function setWebhook2(name:string='',links: Links) {
         console.error('Ошибка при настройке бота:', e);
     }
 }
-export async function setWebhook(config: WebhookConfig) {
-    const mode = config.mode;
-    if (!mode) return;
+// export async function setWebhook(config: WebhookConfig) {
+//     const mode = config.mode;
+//     if (!mode) return;
 
     
-    const data = config.data[mode];
-    const bot_token = data.BOT_TOKEN;
-    const url = data.SERVER_URL;
-    const apiUrl = data.apiURL;
-    const resultStr = `✅ Установил вебхук для ${data.title}`;
+//     const data = config.data[mode];
+//     const bot_token = data.BOT_TOKEN;
+//     const url = data.SERVER_URL;
+//     const apiUrl = data.apiURL;
+//     const resultStr = `✅ Установил вебхук для ${data.title}`;
 
 
-    try {        
-        const bot = new Telegraf(bot_token);
-        const result = await bot.telegram.setWebhook(url + apiUrl);
-        console.log(resultStr);
-        console.log(url + apiUrl);
-        console.log(result);
+//     try {        
+//         const bot = new Telegraf(bot_token);
+//         const result = await bot.telegram.setWebhook(url + apiUrl);
+//         console.log(resultStr);
+//         console.log(url + apiUrl);
+//         console.log(result);
 
-    } catch (e) {
-        console.error('Ошибка при настройке бота:', e);
-    }
-}
+//     } catch (e) {
+//         console.error('Ошибка при настройке бота:', e);
+//     }
+// }
