@@ -1,0 +1,106 @@
+.ico {
+  --w: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:before {
+    content: "";
+    display: block;
+    width: var(--w);
+    height: var(--w);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+}
+
+.ico-ok {
+  &:before {
+    background-image: url("@/assets/ico-ok.svg");
+  }
+
+  &:hover:before {
+    background-image: url("@/assets/ico-ok-h.svg");
+  }
+}
+
+.ico-plus {
+  &:before {
+    background-image: url("@/assets/ico-plus.svg");
+  }
+
+  &:hover:before {
+    background-image: url("@/assets/ico-plus-h.svg");
+  }
+}
+
+.ico-trash {
+  &:before {
+    background-image: url("@/assets/ico-trash.svg");
+  }
+
+  &:hover:before {
+    background-image: url("@/assets/ico-trash-h.svg");
+  }
+}
+
+.ico-clear {
+  &:before {
+    background-image: url("@/assets/ico-clear-events.svg");
+  }
+
+  &:hover:before {
+    background-image: url("@/assets/ico-clear-events-h.svg");
+  }
+}
+
+.ico-gear {
+  &:before {
+    background-image: url("@/assets/ico-gear.svg");
+  }
+
+  &:hover:before {
+    background-image: url("@/assets/ico-gear-h.svg");
+  }
+}
+
+.ico-info-circle {
+  &:before {
+    background-image: url("@/assets/info-circle.svg");
+  }
+
+  &:hover:before {
+    background-image: url("@/assets/info-circle-h.svg");
+  }
+}
+
+.ico-edit {
+  &:before {
+    background-image: url("@/assets/ico-edit.svg");
+  }
+
+  &:hover:before {
+    background-image: url("@/assets/ico-edit-h.svg");
+  }
+}
+
+.ico-chat {
+  &:before {
+    background-image: url("@/assets/ico-chat.svg");
+  }
+
+  &:hover:before {
+    background-image: url("@/assets/ico-chat-h.svg");
+  }
+}
+
+.ico-anchor {
+  &:before {
+    background-image: url("@/assets/ico-anchor.svg");
+  }
+
+  &:hover:before {
+    background-image: url("@/assets/ico-anchor-h.svg");
+  }
+}
