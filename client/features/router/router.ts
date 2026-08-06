@@ -6,7 +6,7 @@ export class Router {
   private routes!: RouteConfig[];
   private notFoundRoute!: RouteConfig;
 
-  init(routes: RouteConfig[], notFoundRoute: RouteConfig) {
+  async init(routes: RouteConfig[], notFoundRoute: RouteConfig) {
     this.routes = routes;
     this.notFoundRoute = notFoundRoute;
 
@@ -23,7 +23,7 @@ export class Router {
       this.navigate(url.pathname);
     });
 
-    this.render();
+    await this.render();
   }
 
   private matchRoute(path: string): { route: RouteConfig; params: PageParams } {
