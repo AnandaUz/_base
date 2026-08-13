@@ -26,7 +26,6 @@ export interface WebhookConfig {
   BOT_TOKEN: string;
   SERVER_URL: string;
   apiURL: string;
-  title?: string;
   name?: string;
 }
 // export interface WebhookConfig {
@@ -52,8 +51,6 @@ export async function setWebhook2(name: string = "", links: Links) {
   }
 }
 export async function setWebhook3(config: WebhookConfig) {
-  // const config = links[name];
-  // if (!config) return;
   const bot_token = config.BOT_TOKEN;
   const url = config.SERVER_URL;
   const apiUrl = config.apiURL;
