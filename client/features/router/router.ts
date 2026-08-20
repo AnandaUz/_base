@@ -68,9 +68,9 @@ export class Router {
     return route.title ?? fallback ?? "";
   }
 
-  showLoader(): void {}
+  // showLoader(): void {}
 
-  hideLoader(): void {}
+  // hideLoader(): void {}
 
   navigate(path: string): void {
     history.pushState({}, "", path);
@@ -91,18 +91,16 @@ export class Router {
     const main = document.querySelector("main");
 
     // если чанк ещё не в кеше — грузится не мгновенно, показываем лоадер с задержкой
-    const isCached = this.pageCache.has(route.path);
+    // const isCached = this.pageCache.has(route.path);
 
-    if (!isCached && main) {
-      if (renderToken === window.location.pathname) {
-        this.showLoader();
-      }
-    }
+    // if (!isCached && main) {
+    //   if (renderToken === window.location.pathname) {
+    //     this.showLoader();
+    //   }
+    // }
 
     try {
       const page = await this.loadPage(route);
-
-      this.hideLoader();
 
       // если пока грузили страницу, юзер успел уйти на другой путь — не рендерим устаревшее
       if (renderToken !== window.location.pathname) return;
@@ -114,8 +112,9 @@ export class Router {
       document.title = this.resolveTitle(route, params, title);
       init?.();
       this.currentPageUnmount = unmount;
+      // this.hideLoader();
     } catch (e) {
-      this.hideLoader();
+      // this.hideLoader();
       console.error("Ошибка роутера:", e);
     }
   }
