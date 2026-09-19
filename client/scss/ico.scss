@@ -15,6 +15,26 @@
   }
 }
 
+.ico-levels {
+  &:before {
+    background-image: url("@/assets/ico-levels.svg");
+  }
+
+  &:hover:before {
+    background-image: url("@/assets/ico-levels-h.svg");
+  }
+}
+
+.ico-in-height {
+  &:before {
+    background-image: url("@/assets/ico-in-height.svg");
+  }
+
+  &:hover:before {
+    background-image: url("@/assets/ico-in-height-h.svg");
+  }
+}
+
 .ico-ok {
   &:before {
     background-image: url("@/assets/ico-ok.svg");
